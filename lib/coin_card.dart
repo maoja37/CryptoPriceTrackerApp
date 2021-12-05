@@ -66,12 +66,14 @@ class CoinCard extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
-                    name,
-                    style: TextStyle(
-                        color: Colors.grey[900],
-                        fontWeight: FontWeight.bold,
-                        fontSize: 25),
+                  FittedBox(fit: BoxFit.scaleDown,
+                    child: Text(
+                      name,
+                      style: TextStyle(
+                          color: Colors.grey[900],
+                          fontWeight: FontWeight.bold,
+                          fontSize: 25),
+                    ),
                   ),
                   Text(
                     symbol,
